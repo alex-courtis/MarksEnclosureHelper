@@ -48,7 +48,7 @@ echo(hinge_id=hinge_id);
 hinge_od = 5.2;
 echo(hinge_od=hinge_od);
 hinge_ifn = 200;
-hinge_basepoint_bottom = 8;
+hinge_basepoint_bottom = 0;
 hinge_basepoint_top = 0;
 hinge_midpoint = 0;
 
@@ -70,9 +70,6 @@ dtspec = [4, 16, 6, 3, dtlen * 0.85];
 bthick = 6;
 // block that recives dovetail 
 dtblock = [dtlen, dtspec[1] + (bthick * 2) + (dt_CLEAR), (dtspec[0])];
-
-// otherwise tail
-front_notch = true;
 
 module insert_bottom(d) {
   diecut(d) {
@@ -96,13 +93,6 @@ module insert_bottom(d) {
 
 module decorate_left(d) { mydttng(bd.y); }
 module decorate_right(d) { mydtnotch(bd.y); }
-
-module decorate_front(d) {
-  if (front_notch)
-    mydtnotch(bd.x);
-  else
-    mydttng(bd.x);
-}
 
 module mydttng(l) {
   cp = (l / 2) - (dtspec[1] / 2);
