@@ -33,8 +33,11 @@ top_rat = 0.15;
 lip_rat = 0.05;
 corner_radius = 6;
 
+CLEAR=0.6;  // [0:0.01:1]
+
 hinge_points = [0.5];
 hinge_len = 30;
+hinge_xrat = 0.33; 
 
 // M3 hex option
 // hinge_zrat = 0.845;
@@ -45,7 +48,7 @@ hinge_len = 30;
 // hinge_ifn = 6;
 
 // M3 circle tweaked to keep upper hinge on baseplate and lower inside dovetail
-hinge_zrat = 0.9085;
+hinge_zrat = 0.9085; // [0:0.0001:1]
 hinge_id = 3.185;
 echo(hinge_id=hinge_id);
 hinge_od = 5.2;
