@@ -67,7 +67,7 @@ catch_wide_bottom = 0.7;
 VIS = false;
 
 // length of dovetail shape
-dtlen = 10;
+dtlen = 10; // [0:0.1:50]
 // clearance for the dovetail notch
 dt_CLEAR = 0.75;
 // dovetail profile: height, top width, bottom width, taper, taper_point
