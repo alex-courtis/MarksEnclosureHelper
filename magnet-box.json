@@ -1,7 +1,7 @@
 {
     "fileFormatVersion": "1",
     "parameterSets": {
-        "x25 z25 wide": {
+        "x25 z25 53.25x71": {
             "VIS": "false",
             "bthick": "6",
             "catch_points": "[0.5]",
@@ -29,9 +29,9 @@
             "y_inner": "48",
             "y_outer": "71",
             "z_inner": "12.5",
-            "z_outer": "28.399999999999999"
+            "z_outer": "28.400000000000002"
         },
-        "x20 z25 wide": {
+        "x20 z25 53.25x71": {
             "VIS": "false",
             "bthick": "6",
             "catch_points": "[0.5]",
@@ -59,10 +59,10 @@
             "y_inner": "52",
             "y_outer": "71",
             "z_inner": "12.5",
-            "z_outer": "28.399999999999999",
+            "z_outer": "28.400000000000002",
             "z_padding": "2.5"
         },
-        "x20 z25": {
+        "x20 z25 48.25x71": {
             "VIS": "false",
             "bthick": "6",
             "catch_points": "[0.5]",
@@ -90,8 +90,70 @@
             "y_inner": "52",
             "y_outer": "71",
             "z_inner": "12.5",
-            "z_outer": "28.399999999999999",
+            "z_outer": "28.400000000000002",
             "z_padding": "2.5"
+        },
+        "x15 z15 43.25x71": {
+            "VIS": "false",
+            "bthick": "6",
+            "catch_points": "[0.5]",
+            "catch_thick": "2",
+            "catch_tooth_zrat": "0.80000000000000004",
+            "catch_wide": "0.40000000000000002",
+            "catch_wide_bottom": "0.69999999999999996",
+            "corner_radius": "6",
+            "dt_CLEAR": "0.75",
+            "dtlen": "10",
+            "hinge_basepoint_bottom": "0",
+            "hinge_basepoint_top": "0",
+            "hinge_id": "3.1850000000000001",
+            "hinge_ifn": "200",
+            "hinge_len": "30",
+            "hinge_midpoint": "0",
+            "hinge_od": "5.2000000000000002",
+            "hinge_points": "[0.5]",
+            "hinge_zrat": "0.90849999999999997",
+            "lip_rat": "0.050000000000000003",
+            "top_rat": "0.14999999999999999",
+            "wall_thick": "1.2",
+            "x_inner": "16",
+            "x_outer": "43.25",
+            "y_inner": "52",
+            "y_outer": "71",
+            "z_inner": "7.5",
+            "z_outer": "18.400000000000002",
+            "z_padding": "0"
+        },
+        "x20 z15 43.25x71": {
+            "VIS": "false",
+            "bthick": "6",
+            "catch_points": "[0.5]",
+            "catch_thick": "2",
+            "catch_tooth_zrat": "0.80000000000000004",
+            "catch_wide": "0.40000000000000002",
+            "catch_wide_bottom": "0.69999999999999996",
+            "corner_radius": "6",
+            "dt_CLEAR": "0.75",
+            "dtlen": "10",
+            "hinge_basepoint_bottom": "0",
+            "hinge_basepoint_top": "0",
+            "hinge_id": "3.1850000000000001",
+            "hinge_ifn": "200",
+            "hinge_len": "30",
+            "hinge_midpoint": "0",
+            "hinge_od": "5.2000000000000002",
+            "hinge_points": "[0.5]",
+            "hinge_zrat": "0.90849999999999997",
+            "lip_rat": "0.050000000000000003",
+            "top_rat": "0.14999999999999999",
+            "wall_thick": "1.2",
+            "x_inner": "21",
+            "x_outer": "43.25",
+            "y_inner": "52",
+            "y_outer": "71",
+            "z_inner": "7.5",
+            "z_outer": "18.400000000000002",
+            "z_padding": "0"
         }
     }
 }

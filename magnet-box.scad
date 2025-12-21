@@ -14,16 +14,16 @@ x_outer = 53.25; // [1:0.05:500]
 // subtract dovetail width 4: 76
 // subtract hinge ~ 5: 71
 // leaves ~2 wiggle
-y_outer = 71; // [1:1:500]
+y_outer = 71; // [1:0.1:500]
 
 // add two wall_thick 26 + 2 * 1.2
-z_outer = 28.4; // [1:1:500] 
+z_outer = 28.4; // [1:0.1:500] 
 
 bd = [x_outer, y_outer, z_outer];
 
-x_inner = 26; // [1:1:100]
-y_inner = 48; // [1:1:100]
-z_inner = 12.5; // [1:1:100]
+x_inner = 26; // [1:0.5:100]
+y_inner = 48; // [1:0.5:100]
+z_inner = 12.5; // [1:0.5:100]
 
 // top and bottom of inner
 z_padding = 0; // [0:0.5:100]
