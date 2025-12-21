@@ -7,7 +7,7 @@ include <hingebox_code.scad> // uses github.com/h2odragon/MarksEnclosureHelper
 // subtract dovetail width 4: 54.75
 // subtract hanging dovetail 4/4: 53.75
 // subtract some wiggle room 0.5: 53.25
-x_outer = 53.25; // [1:1:500]
+x_outer = 53.25; // [1:0.05:500]
 
 // 2 boxes
 // total width: 160 / 2 = 80
@@ -24,6 +24,9 @@ bd = [x_outer, y_outer, z_outer];
 x_inner = 26; // [1:1:100]
 y_inner = 48; // [1:1:100]
 z_inner = 12.5; // [1:1:100]
+
+// top and bottom of inner
+z_padding = 0; // [0:0.5:100]
 
 wall_thick = 1.2; // [0.2:0.2:8]
 top_rat = 0.15;
@@ -93,6 +96,38 @@ module insert_bottom(d) {
 
 module decorate_left(d) { mydttng(bd.y); }
 module decorate_right(d) { mydtnotch(bd.y); }
+
+module decorate_top(d) {
+  mypadding(
+    d,
+    dx=-wall_thick,
+    dy=-wall_thick
+  );
+}
+module decorate_bottom(d) {
+  mypadding(
+    d,
+    dx=wall_thick,
+    dy=wall_thick
+  );
+}
+
+module mypadding(d, dx, dy) {
+  translate(
+    v=[
+      dx + (d.x + wall_thick) / 2,
+      dy + (d.y + wall_thick) / 2,
+      z_padding / 2,
+    ]
+  )
+    cube(
+      size=[
+        x_inner,
+        y_inner,
+        z_padding,
+      ], center=true
+    );
+}
 
 module mydttng(l) {
   cp = (l / 2) - (dtspec[1] / 2);
